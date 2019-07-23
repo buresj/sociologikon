@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sociocake/precache-manifest.a5cd38f08b0d02172358189d0beb3ec8.js"
+  "/sociocake/precache-manifest.267a632817ac22a71da8884b29ba30e0.js"
 );
 
 self.addEventListener('message', (event) => {

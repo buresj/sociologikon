@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "741b0d7559acd217f638de512f89c791",
+    "revision": "dcecba0b0bb0e0f3ece33fd5573f597b",
     "url": "/sociocake/index.html"
   },
   {
-    "revision": "6a4ab2c4d119083a5f90",
+    "revision": "b2f59d12f95f0cf8c5ab",
     "url": "/sociocake/static/css/main.621dd240.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sociocake/static/js/2.26a091e5.chunk.js"
   },
   {
-    "revision": "6a4ab2c4d119083a5f90",
-    "url": "/sociocake/static/js/main.60a59901.chunk.js"
+    "revision": "b2f59d12f95f0cf8c5ab",
+    "url": "/sociocake/static/js/main.7dff313f.chunk.js"
   },
   {
     "revision": "52675d4af42f830b3b0f",
