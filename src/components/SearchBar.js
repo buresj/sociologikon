@@ -5,7 +5,11 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import SearchIcon from '@material-ui/icons/Search';
-import styles from '../General.module.scss'
+import MenuItem from '@material-ui/core/MenuItem';
+import Menu from '@material-ui/core/Menu';
+import IconButton from '@material-ui/core/IconButton';
+import Badge from '@material-ui/core/Badge';
+import logo from '../assets/octocat.png'
 
 const useStyles = makeStyles(theme => ({
   grow: {
@@ -72,6 +76,29 @@ const useStyles = makeStyles(theme => ({
 
 
 const SearchBar = (props) => {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const isMenuOpen = Boolean(anchorEl);
+
+  function handleMenuClose() {
+    setAnchorEl(null);
+  }
+
+  const menuId = 'primary-search-account-menu';
+  const renderMenu = (
+    <Menu
+      anchorEl={anchorEl}
+      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+      id={menuId}
+      keepMounted
+      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+      open={isMenuOpen}
+      onClose={handleMenuClose}
+    >
+      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
+      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+    </Menu>
+  );
+
 
   const classes = useStyles();
 
@@ -80,7 +107,7 @@ const SearchBar = (props) => {
       <AppBar position="static">
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
-            S O C I O L O G I K O N
+            S O C I O C A K E <span role='img' aria-label="CakeIcon"> 🍰</span>
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
@@ -88,13 +115,20 @@ const SearchBar = (props) => {
             </div>
             <InputBase
               onChange={(e) => { props.search(e.target.value) }}
-              placeholder="Hledej závěrečnou práci…"
+              placeholder={`Hledej závěrečnou práci…`}
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,
               }}
               inputProps={{ 'aria-label': 'Search' }}
             />
+          </div>
+          <div className={classes.sectionDesktop}>
+            <IconButton aria-label="GitHub" color="inherit">
+              <Badge badgeContent={1} color="secondary">
+                <a title="Aktualizace" href="https://github.com/buresj/sociocake"><img src={logo} alt="octocat" height="38" /></a>
+              </Badge>
+            </IconButton>
           </div>
         </Toolbar>
       </AppBar>
