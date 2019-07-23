@@ -80,7 +80,7 @@ const SearchBar = (props) => {
       <AppBar position="static">
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
-            S O C I O L O G I K O N
+            S O C I O C A K E <span role='img' aria-label="CakeIcon"> 🍰</span>
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
@@ -88,7 +88,7 @@ const SearchBar = (props) => {
             </div>
             <InputBase
               onChange={(e) => { props.search(e.target.value) }}
-              placeholder="Hledej závěrečnou práci…"
+              placeholder={`Hledej závěrečnou práci…`}
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,
