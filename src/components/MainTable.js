@@ -128,7 +128,7 @@ const MainTable = props => {
                   <i>
                     <span>Autor/ka: {row.author}</span>
                     <span>Rok: {row.year}</span>
-                    <span>Odkaz:<a href={row.link} >{row.link}</a></span>
+                    <span>Odkaz: <a href={row.link} >{row.link}</a></span>
                   </i>
                 </div>
               </TableCell>
