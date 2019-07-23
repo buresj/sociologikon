@@ -9,10 +9,10 @@ export function changeYearRange(yearRange) {
     }
 }
 
-export function changeSchool(school) {
+export function changeSchool(department) {
     return {
         type: FILTER_SCHOOL,
-        school: school
+        department: department
     }
 }
 

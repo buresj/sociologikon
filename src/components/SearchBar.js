@@ -5,6 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import SearchIcon from '@material-ui/icons/Search';
+import styles from '../General.module.scss'
 
 const useStyles = makeStyles(theme => ({
   grow: {
@@ -86,7 +87,7 @@ const SearchBar = (props) => {
               <SearchIcon />
             </div>
             <InputBase
-              onChange={(e) => {props.search(e.target.value)}}
+              onChange={(e) => { props.search(e.target.value) }}
               placeholder="Hledej závěrečnou práci…"
               classes={{
                 root: classes.inputRoot,
@@ -98,7 +99,7 @@ const SearchBar = (props) => {
         </Toolbar>
       </AppBar>
     </div>
- 
+
   );
 }
 

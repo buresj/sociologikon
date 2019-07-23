@@ -5,7 +5,7 @@ const mapStateToProps = state => {
   return {
     word: state.search.word,
     yearRange: state.settings.yearRange,
-    department: state.settings.school,
+    department: state.settings.department,
     typeOfWork: state.settings.typeOfWork
   }
 };

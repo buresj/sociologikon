@@ -10,7 +10,7 @@ const useStyles = makeStyles({
 });
 
 const RangeSlider = (props) => {
-    
+
   const classes = useStyles();
   const [value, setValue] = React.useState(props.yearRange);
 
@@ -30,7 +30,7 @@ const RangeSlider = (props) => {
         valueLabelDisplay="auto"
         aria-labelledby="range-slider"
         marks
-        min={2010}
+        min={2006}
         max={2019}
       />
     </div>

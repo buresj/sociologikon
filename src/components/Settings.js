@@ -6,15 +6,15 @@ import styles from '../Table.module.scss';
 const Settings = props => {
     return (
         <div className={styles.settingsBar}>
-            {/* <RangeSlider
+            <RangeSlider
                 yearRange={props.yearRange}
                 changeYear={props.changeYearRange}
-            /> */}
-            {/* <MultipleSelect
-                selectData={props.school}
+            />
+            <MultipleSelect
+                selectData={props.department}
                 changeFunction={props.changeSchool}
                 menu={['FSS', 'FSV']}
-            /> */}
+            />
             {/* <MultipleSelect
                 selectData={props.typeOfWork}
                 changeFunction={props.changeType}

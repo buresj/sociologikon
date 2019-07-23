@@ -5,7 +5,7 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-import data from '../assets/thesis_FSV.json'
+import data from '../assets/thesis'
 import Fuse from 'fuse.js';
 
 const useStyles = makeStyles(theme => ({
@@ -45,11 +45,11 @@ const MainTable = props => {
 
   const options = {
     shouldSort: true,
-    threshold: 0.5,
+    threshold: 0.3,
     location: 0,
-    distance: 500,
-    maxPatternLength: 32,
-    minMatchCharLength: 1,
+    distance: 100,
+    maxPatternLength: 30,
+    minMatchCharLength: 3,
     keys: [
       "title",
       "keywords",
@@ -59,27 +59,27 @@ const MainTable = props => {
 
   let rows = data;
 
-  // let filterSchool = {
-  //   department: props.department
-  // };
+  let filterSchool = {
+    department: props.department
+  };
 
   // let filterType = {
   //   type: props.typeOfWork
   // }
 
-  // let filterYears = {
-  //   year: getYears(props.yearRange)
-  // }
+  let filterYears = {
+    year: getYears(props.yearRange)
+  }
 
 
-  // rows = rows.filter(function (thesis) {
-  //   for (const key in filterSchool) {
-  //     if (thesis[key] === filterSchool[key][0]
-  //       || thesis[key] === filterSchool[key][1])
-  //       return true;
-  //   }
-  //   return false;
-  // });
+  rows = rows.filter(function (thesis) {
+    for (const key in filterSchool) {
+      if (thesis[key] === filterSchool[key][0]
+        || thesis[key] === filterSchool[key][1])
+        return true;
+    }
+    return false;
+  });
 
   // rows = rows.filter(function (thesis) {
   //   for (const key in filterType) {
@@ -91,16 +91,17 @@ const MainTable = props => {
   //   return false;
   // });
 
-  // rows = rows.filter(function (thesis) {
-  //   for (const key in filterYears) {
-  //     for (let i = 0; i < filterYears[key].length; i++) {
-  //       if (thesis[key] === filterYears[key][i])
-  //         return true;
-  //     }
-  //   }
-  //   return false;
-  // });
+  rows = rows.filter(function (thesis) {
+    for (const key in filterYears) {
+      for (let i = 0; i < filterYears[key].length; i++) {
+        if (thesis[key] === filterYears[key][i])
+          return true;
+      }
+    }
+    return false;
+  });
 
+  console.log(rows.length)
   const fuse = new Fuse(rows, options);
 
   const filtered = () => {
@@ -110,8 +111,7 @@ const MainTable = props => {
     return shuffle(rows.slice(0, 20));
   };
 
-  console.log(filtered())
-
+  console.log(filtered().length)
   const classes = useStyles();
 
   return (
@@ -126,9 +126,8 @@ const MainTable = props => {
                 <div>&nbsp;</div>
                 <div className={classes.info}>
                   <i>
-                    <span>Autor/ka:{row.author}</span>
-                    <span>Rok:{row.year}</span>
-                    <span>Druh:{row.type} </span>
+                    <span>Autor/ka: {row.author}</span>
+                    <span>Rok: {row.year}</span>
                     <span>Odkaz:<a href={row.link} >{row.link}</a></span>
                   </i>
                 </div>
