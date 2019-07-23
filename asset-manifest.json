@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sociologikon/static/css/main.6113e04d.chunk.css",
+    "main.js": "/sociologikon/static/js/main.639ba1f3.chunk.js",
+    "main.js.map": "/sociologikon/static/js/main.639ba1f3.chunk.js.map",
+    "runtime~main.js": "/sociologikon/static/js/runtime~main.f9e693b4.js",
+    "runtime~main.js.map": "/sociologikon/static/js/runtime~main.f9e693b4.js.map",
+    "static/js/2.9ae4ff4b.chunk.js": "/sociologikon/static/js/2.9ae4ff4b.chunk.js",
+    "static/js/2.9ae4ff4b.chunk.js.map": "/sociologikon/static/js/2.9ae4ff4b.chunk.js.map",
+    "index.html": "/sociologikon/index.html",
+    "precache-manifest.83dff9210e45f96c9cd72085b64afe19.js": "/sociologikon/precache-manifest.83dff9210e45f96c9cd72085b64afe19.js",
+    "service-worker.js": "/sociologikon/service-worker.js",
+    "static/css/main.6113e04d.chunk.css.map": "/sociologikon/static/css/main.6113e04d.chunk.css.map"
+  }
+}
