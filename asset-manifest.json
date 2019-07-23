@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/sociologikon/static/css/main.6113e04d.chunk.css",
-    "main.js": "/sociologikon/static/js/main.639ba1f3.chunk.js",
-    "main.js.map": "/sociologikon/static/js/main.639ba1f3.chunk.js.map",
-    "runtime~main.js": "/sociologikon/static/js/runtime~main.f9e693b4.js",
-    "runtime~main.js.map": "/sociologikon/static/js/runtime~main.f9e693b4.js.map",
-    "static/js/2.9ae4ff4b.chunk.js": "/sociologikon/static/js/2.9ae4ff4b.chunk.js",
-    "static/js/2.9ae4ff4b.chunk.js.map": "/sociologikon/static/js/2.9ae4ff4b.chunk.js.map",
-    "index.html": "/sociologikon/index.html",
-    "precache-manifest.83dff9210e45f96c9cd72085b64afe19.js": "/sociologikon/precache-manifest.83dff9210e45f96c9cd72085b64afe19.js",
-    "service-worker.js": "/sociologikon/service-worker.js",
-    "static/css/main.6113e04d.chunk.css.map": "/sociologikon/static/css/main.6113e04d.chunk.css.map"
+    "main.css": "/sociocake/static/css/main.621dd240.chunk.css",
+    "main.js": "/sociocake/static/js/main.60a59901.chunk.js",
+    "main.js.map": "/sociocake/static/js/main.60a59901.chunk.js.map",
+    "runtime~main.js": "/sociocake/static/js/runtime~main.af3371d4.js",
+    "runtime~main.js.map": "/sociocake/static/js/runtime~main.af3371d4.js.map",
+    "static/js/2.26a091e5.chunk.js": "/sociocake/static/js/2.26a091e5.chunk.js",
+    "static/js/2.26a091e5.chunk.js.map": "/sociocake/static/js/2.26a091e5.chunk.js.map",
+    "index.html": "/sociocake/index.html",
+    "precache-manifest.a5cd38f08b0d02172358189d0beb3ec8.js": "/sociocake/precache-manifest.a5cd38f08b0d02172358189d0beb3ec8.js",
+    "service-worker.js": "/sociocake/service-worker.js",
+    "static/css/main.621dd240.chunk.css.map": "/sociocake/static/css/main.621dd240.chunk.css.map",
+    "static/media/octocat.png": "/sociocake/static/media/octocat.5cd9f30e.png"
   }
 }
