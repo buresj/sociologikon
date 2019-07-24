@@ -117,7 +117,7 @@ const SearchBar = (props) => {
             />
           </div>
           <div className={classes.sectionDesktop}>
-            <a onClick={changeVersion} href="http://localhost:3000/">
+            <a onClick={changeVersion} href="https://github.com/buresj/sociocake">
               <IconButton aria-label="GitHub" color="inherit">
                 {showNotification()}
               </IconButton>
