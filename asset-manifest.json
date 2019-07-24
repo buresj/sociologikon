@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/sociocake/static/css/main.dad32fbc.chunk.css",
-    "main.js": "/sociocake/static/js/main.125347ee.chunk.js",
-    "main.js.map": "/sociocake/static/js/main.125347ee.chunk.js.map",
+    "main.css": "/sociocake/static/css/main.6344e9e9.chunk.css",
+    "main.js": "/sociocake/static/js/main.2e8b822f.chunk.js",
+    "main.js.map": "/sociocake/static/js/main.2e8b822f.chunk.js.map",
     "runtime~main.js": "/sociocake/static/js/runtime~main.af3371d4.js",
     "runtime~main.js.map": "/sociocake/static/js/runtime~main.af3371d4.js.map",
-    "static/js/2.9f51a023.chunk.js": "/sociocake/static/js/2.9f51a023.chunk.js",
-    "static/js/2.9f51a023.chunk.js.map": "/sociocake/static/js/2.9f51a023.chunk.js.map",
+    "static/js/2.371a23df.chunk.js": "/sociocake/static/js/2.371a23df.chunk.js",
+    "static/js/2.371a23df.chunk.js.map": "/sociocake/static/js/2.371a23df.chunk.js.map",
     "index.html": "/sociocake/index.html",
-    "precache-manifest.e3e98420195ee9f51a86f341d87553ae.js": "/sociocake/precache-manifest.e3e98420195ee9f51a86f341d87553ae.js",
+    "precache-manifest.d64e73f983fa8ebf0bbfd31bc8f6d70f.js": "/sociocake/precache-manifest.d64e73f983fa8ebf0bbfd31bc8f6d70f.js",
     "service-worker.js": "/sociocake/service-worker.js",
-    "static/css/main.dad32fbc.chunk.css.map": "/sociocake/static/css/main.dad32fbc.chunk.css.map",
+    "static/css/main.6344e9e9.chunk.css.map": "/sociocake/static/css/main.6344e9e9.chunk.css.map",
     "static/media/octocat.png": "/sociocake/static/media/octocat.5cd9f30e.png"
   }
 }
