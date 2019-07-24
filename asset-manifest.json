@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/sociocake/static/css/main.6344e9e9.chunk.css",
-    "main.js": "/sociocake/static/js/main.4a34e3b7.chunk.js",
-    "main.js.map": "/sociocake/static/js/main.4a34e3b7.chunk.js.map",
+    "main.js": "/sociocake/static/js/main.16ae6901.chunk.js",
+    "main.js.map": "/sociocake/static/js/main.16ae6901.chunk.js.map",
     "runtime~main.js": "/sociocake/static/js/runtime~main.af3371d4.js",
     "runtime~main.js.map": "/sociocake/static/js/runtime~main.af3371d4.js.map",
     "static/js/2.371a23df.chunk.js": "/sociocake/static/js/2.371a23df.chunk.js",
     "static/js/2.371a23df.chunk.js.map": "/sociocake/static/js/2.371a23df.chunk.js.map",
     "index.html": "/sociocake/index.html",
-    "precache-manifest.8fc1f1b59f0b6da0db656f1c6db31e5e.js": "/sociocake/precache-manifest.8fc1f1b59f0b6da0db656f1c6db31e5e.js",
+    "precache-manifest.846a843cdb9fb46821a3438f86993bbd.js": "/sociocake/precache-manifest.846a843cdb9fb46821a3438f86993bbd.js",
     "service-worker.js": "/sociocake/service-worker.js",
     "static/css/main.6344e9e9.chunk.css.map": "/sociocake/static/css/main.6344e9e9.chunk.css.map",
     "static/media/octocat.png": "/sociocake/static/media/octocat.5cd9f30e.png"
