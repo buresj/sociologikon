@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import Settings from '../Settings';
 import { changeYearRange, changeSchool, changeType } from '../../actions/settings';
 
-const mapStateToProps = state => {
+const mapStateToProps = (state, props) => {
     return {
         yearRange: state.settings.yearRange,
         department: state.settings.department,

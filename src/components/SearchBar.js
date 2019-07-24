@@ -72,9 +72,26 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-
-
 const SearchBar = (props) => {
+
+  const changeVersion = () => {
+    window.localStorage.setItem('version', props.version)
+  }
+
+  const checkVersion = (version) => {
+    return window.localStorage.getItem('version') === version;
+  }
+
+  const showNotification = () => {
+    if (!window.localStorage.getItem('version') || !checkVersion(props.version)) {
+      return (
+        <Badge badgeContent={props.version} color="secondary">
+          <img border="0" src={logo} alt="octocat" height="38" />
+        </Badge>
+      )
+    }
+    return <img border="0" src={logo} alt="octocat" height="38" />
+  }
 
   const classes = useStyles();
 
@@ -83,7 +100,7 @@ const SearchBar = (props) => {
       <AppBar position="static">
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
-            <a className={styles['title']} style={{ textDecoration: 'none', color: 'white' }} href="/sociocake/">S O C I O C A K E <span role='img' aria-label="CakeIcon"> 🍰</span></a>
+            <a className={styles['title']} style={{ textDecoration: 'none', color: 'white' }} href="/sociocake/">S O C I O C A K E<span role='img' aria-label="CakeIcon"> 🍰</span></a>
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
@@ -100,17 +117,15 @@ const SearchBar = (props) => {
             />
           </div>
           <div className={classes.sectionDesktop}>
-            <a href="https://github.com/buresj/sociocake">
+            <a onClick={changeVersion} href="http://localhost:3000/">
               <IconButton aria-label="GitHub" color="inherit">
-                <Badge badgeContent={`Update`} color="secondary">
-                  <img border="0" src={logo} alt="octocat" height="38" />
-                </Badge>
+                {showNotification()}
               </IconButton>
             </a>
           </div>
         </Toolbar>
       </AppBar>
-    </div>
+    </div >
 
   );
 }

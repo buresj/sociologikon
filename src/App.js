@@ -4,9 +4,10 @@ import TableContainer from './components/containers/TableContainer';
 import SettingsContainer from './components/containers/SettingsContainer';
 
 function App() {
+
   return (
     <div>
-      <SearchBarContainer />
+      <SearchBarContainer version='0.3' />
       <SettingsContainer />
       <TableContainer />
     </div>
