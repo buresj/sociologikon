@@ -2,9 +2,10 @@ import { connect } from 'react-redux';
 import SearchBar from '../SearchBar';
 import { search } from '../../actions/search';
 
-const mapStateToProps = state => {
+const mapStateToProps = (state, props) => {
   return {
-    word : state.search.word
+    word: state.search.word,
+    version: props.version
   }
 };
 
