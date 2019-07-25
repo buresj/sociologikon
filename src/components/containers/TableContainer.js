@@ -3,9 +3,11 @@ import MainTable from '../MainTable';
 
 const mapStateToProps = state => {
   return {
-    word: state.search.word,
-    yearRange: state.settings.yearRange,
-    department: state.settings.department,
+    filter: {
+      yearRange: state.settings.yearRange,
+      department: state.settings.department,
+      word: state.search.word
+    },
     typeOfWork: state.settings.typeOfWork
   }
 };
