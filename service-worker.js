@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sociologikon/precache-manifest.4978d672bdba8bde608196c21f9a7fc7.js"
+  "/sociologikon/precache-manifest.2328b50e814a778e63d1ea5bf9078da9.js"
 );
 
 self.addEventListener('message', (event) => {
