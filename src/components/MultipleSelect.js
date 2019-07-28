@@ -13,14 +13,15 @@ const useStyles = makeStyles(theme => ({
   },
   formControl: {
     margin: theme.spacing(1),
-    minWidth: 120,
-    maxWidth: 300,
+    minWidth: 200,
+    maxWidth: 200,
   },
   chips: {
     display: 'flex',
     flexWrap: 'wrap',
   },
   chip: {
+    fontSize: '10px',
     margin: 2,
   },
   noLabel: {
@@ -34,7 +35,7 @@ const MenuProps = {
   PaperProps: {
     style: {
       maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-      width: 250,
+      width: 200,
     },
   },
 };

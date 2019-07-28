@@ -2,10 +2,11 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/core/Slider';
+import 'typeface-roboto';
 
 const useStyles = makeStyles({
   root: {
-    width: 300,
+    width: 200,
   },
 });
 

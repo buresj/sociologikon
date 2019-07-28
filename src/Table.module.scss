@@ -1,8 +1,83 @@
-.settingsBar {
-    width: 865px;
-    margin-left: 250px;
-    padding-top: 35px;
+@import url(https://fonts.googleapis.com/css?family=Nunito:700|Raleway:900&display=swap);
+
+$titleFont: "Raleway";
+$thesisFont: "Nunito";
+
+body {
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .card {
+    padding: 10px;
     display: flex;
-    justify-content: space-around;
-    align-items:  baseline;
+    background-color: white;
+    border-radius: 1px;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    width: 300px;
+    flex-wrap: wrap;
+    height: 150px;
+    align-items: baseline;
+
+    flex-basis: auto;
+    margin: 20px;
+    transition: background-color 0.5s ease-out;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    &:hover {
+      transform: translateY(0.5px);
+    }
+
+    .title {
+      font-family: $thesisFont;
+      font-size: 15px;
+    }
+
+    .labels {
+      align-self: flex-end;
+      display: flex;
+      align-items: baseline;
+
+      span {
+        display: flex;
+        opacity: 1;
+        color: white;
+        font-size: 10px;
+        text-align: center;
+        padding: 7px;
+      }
+
+      .keywords {
+        border-radius: 25px;
+        background-color: blue;
+        opacity: 0.5;
+        cursor: pointer;
+
+        &:hover {
+          transform: translateY(0.5px);
+        }
+      }
+
+      .department {
+        border-radius: 25px;
+        background-color: red;
+        opacity: 0.6;
+      }
+
+      .year {
+        border-radius: 18px;
+        background-color: green;
+        opacity: 0.5;
+      }
+    }
+  }
 }

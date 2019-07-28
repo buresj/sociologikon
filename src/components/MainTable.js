@@ -1,7 +1,10 @@
 import React from 'react';
 import dataSet from '../assets/thesis'
 import Fuse from 'fuse.js';
-import options from '../utils/options'
+import options from '../utils/options';
+import styles from '../Table.module.scss';
+import Card from './Card'
+
 
 class MainTable extends React.Component {
   constructor(props) {
@@ -91,16 +94,14 @@ class MainTable extends React.Component {
 
   render() {
     return (
-      <ul>
-        {this.state.filteredData.slice(0, this.state.limit).map((row, index) => (
-          <li key={index}>
-            <span>{row.title}</span>
-            <span>{row.author}</span>
-            <span>{row.year}</span>
-            <span><a href={row.link} >{row.link}</a></span>
-          </li>
+      <div className={styles.container}>
+        {this.state.filteredData.slice(0, this.state.limit).map((thesis) => (
+          <Card
+            key={thesis.title}
+            thesis={thesis}
+          />
         ))};
-  </ul>
+      </div>
     )
   }
 }
