@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/sociocake/static/css/main.6344e9e9.chunk.css",
-    "main.js": "/sociocake/static/js/main.16ae6901.chunk.js",
-    "main.js.map": "/sociocake/static/js/main.16ae6901.chunk.js.map",
-    "runtime~main.js": "/sociocake/static/js/runtime~main.af3371d4.js",
-    "runtime~main.js.map": "/sociocake/static/js/runtime~main.af3371d4.js.map",
-    "static/js/2.371a23df.chunk.js": "/sociocake/static/js/2.371a23df.chunk.js",
-    "static/js/2.371a23df.chunk.js.map": "/sociocake/static/js/2.371a23df.chunk.js.map",
-    "index.html": "/sociocake/index.html",
-    "precache-manifest.846a843cdb9fb46821a3438f86993bbd.js": "/sociocake/precache-manifest.846a843cdb9fb46821a3438f86993bbd.js",
-    "service-worker.js": "/sociocake/service-worker.js",
-    "static/css/main.6344e9e9.chunk.css.map": "/sociocake/static/css/main.6344e9e9.chunk.css.map",
-    "static/media/octocat.png": "/sociocake/static/media/octocat.5cd9f30e.png"
+    "main.css": "/sociologikon/static/css/main.bcab8496.chunk.css",
+    "main.js": "/sociologikon/static/js/main.396bde5e.chunk.js",
+    "main.js.map": "/sociologikon/static/js/main.396bde5e.chunk.js.map",
+    "runtime~main.js": "/sociologikon/static/js/runtime~main.f9e693b4.js",
+    "runtime~main.js.map": "/sociologikon/static/js/runtime~main.f9e693b4.js.map",
+    "static/css/2.cb822ba0.chunk.css": "/sociologikon/static/css/2.cb822ba0.chunk.css",
+    "static/js/2.e9d22b38.chunk.js": "/sociologikon/static/js/2.e9d22b38.chunk.js",
+    "static/js/2.e9d22b38.chunk.js.map": "/sociologikon/static/js/2.e9d22b38.chunk.js.map",
+    "index.html": "/sociologikon/index.html",
+    "precache-manifest.4978d672bdba8bde608196c21f9a7fc7.js": "/sociologikon/precache-manifest.4978d672bdba8bde608196c21f9a7fc7.js",
+    "service-worker.js": "/sociologikon/service-worker.js",
+    "static/css/2.cb822ba0.chunk.css.map": "/sociologikon/static/css/2.cb822ba0.chunk.css.map",
+    "static/css/main.bcab8496.chunk.css.map": "/sociologikon/static/css/main.bcab8496.chunk.css.map",
+    "static/media/octocat.png": "/sociologikon/static/media/octocat.5cd9f30e.png",
+    "static/media/index.css": "/sociologikon/static/media/roboto-latin-900italic.ebf6d164.woff2"
   }
 }
