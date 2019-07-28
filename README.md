@@ -1,6 +1,6 @@
-# Sociocake
+# Sociologikon
 
-[Sociocake](https://buresj.github.io/sociocake/) is a web application which enables easy and comprehensive search in student's sociological works (bachelor's, master's thesis and dissertations) defended on Czech universities. The goal is to make finding inspiration for writing thesis.
+[Sociologikon](https://buresj.github.io/sociologikon/) is a web application which enables easy and comprehensive search in student's sociological works (bachelor's, master's thesis and dissertations) defended on Czech universities. The goal is to make finding inspiration for writing thesis.
 
 # Current version (0.2.0)
 

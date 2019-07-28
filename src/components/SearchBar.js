@@ -100,7 +100,7 @@ const SearchBar = (props) => {
       <AppBar position="static">
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
-            <a className={styles['title']} style={{ textDecoration: 'none', color: 'white' }} href="/sociocake/">S O C I O C A K E<span role='img' aria-label="CakeIcon"> 🍰</span></a>
+            <a className={styles['title']} style={{ textDecoration: 'none', color: 'white' }} href="/sociologikon/">sociologikon</a>
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
@@ -117,7 +117,7 @@ const SearchBar = (props) => {
             />
           </div>
           <div className={classes.sectionDesktop}>
-            <a onClick={changeVersion} href="https://github.com/buresj/sociocake">
+            <a onClick={changeVersion} href="https://github.com/buresj/sociologikon">
               <IconButton aria-label="GitHub" color="inherit">
                 {showNotification()}
               </IconButton>

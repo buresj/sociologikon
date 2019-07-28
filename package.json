@@ -1,6 +1,6 @@
 {
-  "name": "sociocake",
-  "homepage": "https://buresj.github.io/sociocake",
+  "name": "sociologikon",
+  "homepage": "https://buresj.github.io/sociologikon",
   "version": "0.2.0",
   "private": true,
   "dependencies": {
@@ -16,7 +16,8 @@
     "react-redux": "^7.1.0",
     "react-scripts": "3.0.1",
     "redux": "^4.0.4",
-    "redux-devtools-extension": "^2.13.8"
+    "redux-devtools-extension": "^2.13.8",
+    "typeface-roboto": "0.0.75"
   },
   "scripts": {
     "start": "react-scripts start",

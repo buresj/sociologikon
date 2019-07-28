@@ -1,8 +1,9 @@
 // @import url(https:;//fonts.googleapis.com/css?family=Dosis&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Nunito:400|Raleway:300&display=swap);
 
-$headerFont: "Julius Sans One";
+$titleFont: "Raleway";
 
 .title {
-  font-family: $headerFont;
+  font-size: 28px;
+  font-family: $titleFont;
 }
