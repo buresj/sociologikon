@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div>
-      <SearchBarContainer version='v0.2' />
+      <SearchBarContainer version='v0.3' />
       <SettingsContainer />
       <TableContainer />
     </div>
