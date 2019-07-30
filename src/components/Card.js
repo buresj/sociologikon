@@ -69,7 +69,7 @@ export default class Card extends React.Component {
         return (
             <div className={styles.card} key={this.props.index} >
 
-                <span className={styles.title}> {this.props.thesis.title}<a href={this.props.thesis.link}><IconButton
+                <span className={styles.title}> {this.props.thesis.title}<a href={this.props.thesis.link} rel="noopener noreferrer" target="_blank"><IconButton
                     size='small'><Icon>link-variant</Icon></IconButton></a></span>
                 <div className={styles.labels}>
                     {this.getTagComponents()}

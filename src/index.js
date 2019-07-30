@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import rootReducer from './reducers';
 import { composeWithDevTools } from "redux-devtools-extension";
+import * as serviceWorker from './serviceWorker';
 
 const store = createStore(rootReducer(), composeWithDevTools());
 
@@ -14,3 +15,5 @@ render(
         <App />
     </Provider>,
     document.getElementById('root'));
+
+serviceWorker.register();
