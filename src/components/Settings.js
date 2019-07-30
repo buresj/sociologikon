@@ -2,6 +2,7 @@ import React from 'react';
 import RangeSlider from './RangeSlider';
 import MultipleSelect from './MultipleSelect';
 import styles from '../Settings.module.scss';
+import LimitSlider from './LimitSlider';
 
 const Settings = props => {
     return (
@@ -10,6 +11,11 @@ const Settings = props => {
                 className={styles.year}
                 yearRange={props.yearRange}
                 changeYear={props.changeYearRange}
+            />
+            <LimitSlider
+                className={styles.year}
+                limit={props.limit}
+                changeLimit={props.changeLimit}
             />
             <div>
                 <MultipleSelect

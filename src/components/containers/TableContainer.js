@@ -6,7 +6,8 @@ const mapStateToProps = state => {
     filter: {
       yearRange: state.settings.yearRange,
       department: state.settings.department,
-      word: state.search.word
+      word: state.search.word,
+      limit: state.settings.limit
     },
     typeOfWork: state.settings.typeOfWork
   }

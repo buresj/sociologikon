@@ -54,7 +54,7 @@ const MultipleSelect = props => {
   const classes = useStyles();
   const theme = useTheme();
   const [value, setValue] = React.useState(props.selectData);
-  console.log(value);
+  
 
   function handleChange(event) {
     props.changeFunction(event.target.value)
