@@ -53,7 +53,9 @@ export default class Card extends React.Component {
 
         let keywords = [...this.state.keywords];
         keywords = keywords.map((tag, key) => {
-            return <div key={key} className={styles.keywords}><span>{tag}</span></div>
+            if (tag.length < 30) {
+                return <div key={key} className={styles.keywords}><span>{tag}</span></div>
+            }
         });
 
         all.push(thesis)
@@ -66,7 +68,7 @@ export default class Card extends React.Component {
 
         return (
             <div className={styles.card} key={this.props.index} >
-              
+
                 <span className={styles.title}> {this.props.thesis.title}<a href={this.props.thesis.link}><IconButton
                     size='small'><Icon>link-variant</Icon></IconButton></a></span>
                 <div className={styles.labels}>
