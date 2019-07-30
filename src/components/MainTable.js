@@ -18,7 +18,7 @@ class MainTable extends React.Component {
 
     return {
       rawData: data,
-      filteredData: data
+      filteredData: this.filterYears(data)
     }
   }
 
@@ -44,28 +44,11 @@ class MainTable extends React.Component {
     return years;
   }
 
-  filter() {
-
-    let filteredData = this.state.rawData;
-
-    const filterSchool = {
-      department: this.props.filter.department
-    }
-
+  filterYears(data) {
     const filterYears = {
       year: this.getYears(this.props.filter.yearRange)
     }
-
-    filteredData = filteredData.filter(function (thesis) {
-      for (const key in filterSchool) {
-        if (thesis[key] === filterSchool[key][0]
-          || thesis[key] === filterSchool[key][1])
-          return true;
-      }
-      return false;
-    })
-
-    filteredData = filteredData.filter(function (thesis) {
+    data = data.filter(function (thesis) {
       for (const key in filterYears) {
         for (let i = 0; i < filterYears[key].length; i++) {
           if (thesis[key] === filterYears[key][i])
@@ -74,6 +57,30 @@ class MainTable extends React.Component {
       }
       return false;
     })
+    return data;
+  }
+
+  filterSchool(data) {
+    const filterSchool = {
+      department: this.props.filter.department
+    }
+    data = data.filter(function (thesis) {
+      for (const key in filterSchool) {
+        if (thesis[key] === filterSchool[key][0]
+          || thesis[key] === filterSchool[key][1])
+          return true;
+      }
+      return false;
+    })
+    return data;
+  }
+
+
+  filter() {
+
+    let filteredData = this.state.rawData;
+    filteredData = this.filterSchool(filteredData);
+    filteredData = this.filterYears(filteredData);
 
     if (this.props.filter.word) {
       let fuse = new Fuse(filteredData, options);
