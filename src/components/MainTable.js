@@ -17,7 +17,6 @@ class MainTable extends React.Component {
     const data = this.shuffle(dataSet)
 
     return {
-      limit: 20,
       rawData: data,
       filteredData: data
     }
@@ -95,7 +94,7 @@ class MainTable extends React.Component {
   render() {
     return (
       <div className={styles.container}>
-        {this.state.filteredData.slice(0, this.state.limit).map((thesis) => (
+        {this.state.filteredData.slice(0, this.props.filter.limit).map((thesis) => (
           <Card
             key={thesis.title}
             thesis={thesis}

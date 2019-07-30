@@ -1,17 +1,21 @@
 import { connect } from 'react-redux';
 import Settings from '../Settings';
-import { changeYearRange, changeSchool, changeType } from '../../actions/settings';
+import { changeYearRange, changeSchool, changeType, changeLimit } from '../../actions/settings';
 
 const mapStateToProps = (state, props) => {
     return {
         yearRange: state.settings.yearRange,
         department: state.settings.department,
-        typeOfWork: state.settings.typeOfWork
+        typeOfWork: state.settings.typeOfWork,
+        limit: state.settings.limit
     }
 };
 
 const mapDispatchToProps = dispatch => {
     return {
+        changeLimit(limit) {
+            dispatch(changeLimit(limit))
+        },
         changeYearRange(yearRange) {
             dispatch(changeYearRange(yearRange));
         },
