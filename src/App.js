@@ -1,15 +1,15 @@
 import React from 'react';
-import SearchBarContainer from './components/containers/SearchBarContainer';
-import TableContainer from './components/containers/TableContainer';
-import SettingsContainer from './components/containers/SettingsContainer';
+import SideBar from './components/SideBar';
+import DashBoard from './components/DashBoard';
+import styles from './MainLayout.module.scss';
+import NavBar from './components/NavBar';
 
 function App() {
-
   return (
-    <div>
-      <SearchBarContainer version='v0.3' />
-      <SettingsContainer />
-      <TableContainer />
+    <div className={styles.main}>
+      <div className={styles.navbar}><NavBar /></div>
+      <div className={styles.sidebar}><SideBar /></div>
+      <div className={styles.dashboard}><DashBoard /></div>
     </div>
   );
 }

@@ -1,0 +1,11 @@
+@import "General.module.scss";
+
+.container {
+  flex-direction: column;
+
+  .settings {
+    color: black;
+    margin-top: 150px;
+    position: fixed;
+  }
+}

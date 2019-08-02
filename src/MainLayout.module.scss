@@ -1,0 +1,23 @@
+.main {
+  display: flex;
+
+  .navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    opacity: 0.92;
+  }
+
+  .sidebar {
+    background: whitesmoke;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 2;
+  }
+
+  .dashboard {
+    margin-left: 320px;
+    z-index: 1;
+  }
+}

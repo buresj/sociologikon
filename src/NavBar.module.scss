@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:400|Raleway:300&display=swap);
+
+$titleFont: "Raleway";
+
+.container {
+  height: 45px;
+  box-shadow: 1px 1px 2px 3px lightgrey;
+  background: white;
+  padding-top: 5px;
+
+  .title {
+    margin-left: 35px;
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+    font-family: $titleFont;
+  }
+}

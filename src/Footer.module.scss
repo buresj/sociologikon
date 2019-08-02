@@ -1,0 +1,11 @@
+@import "General.module.scss";
+
+.container {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  .octocat {
+    margin-left: 4%;
+  }
+}

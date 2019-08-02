@@ -9,6 +9,7 @@ class MainTable extends React.Component {
   constructor(props) {
     super(props)
     this.state = this.getInitialState();
+    this.props.count(this.state.filteredData.length);
   }
 
   getInitialState() {
@@ -19,9 +20,26 @@ class MainTable extends React.Component {
     }
   }
 
-  componentDidUpdate(prevProps) {
-    if (this.props.filter !== prevProps.filter) {
+  componentDidUpdate(prevProps, prevState) {
+
+    if (this.props.filter.yearRange !== prevProps.filter.yearRange) {
       this.filter();
+    }
+
+    if (this.props.filter.department !== prevProps.filter.department) {
+      this.filter();
+    }
+
+    if (this.props.filter.type !== prevProps.filter.type) {
+      this.filter();
+    }
+
+    if (this.props.filter.word !== prevProps.filter.word) {
+      this.filter();
+    }
+
+    if (this.state.filteredData !== prevState.filteredData) {
+      this.props.count(this.state.filteredData.length);
     }
   }
 
@@ -57,6 +75,23 @@ class MainTable extends React.Component {
     return data;
   }
 
+  filterType(data) {
+    const filterType = {
+      type: this.props.filter.type
+    }
+    data = data.filter(function (thesis) {
+      for (const key in filterType) {
+        if (thesis[key] === filterType[key][0]
+          || thesis[key] === filterType[key][1]
+          || thesis[key] === filterType[key][2]
+        )
+          return true;
+      }
+      return false;
+    })
+    return data;
+  }
+
   filterSchool(data) {
     const filterSchool = {
       department: this.props.filter.department
@@ -77,6 +112,7 @@ class MainTable extends React.Component {
     let filteredData = this.state.rawData;
     filteredData = this.filterSchool(filteredData);
     filteredData = this.filterYears(filteredData);
+    filteredData = this.filterType(filteredData);
 
     if (this.props.filter.word) {
       let fuse = new Fuse(filteredData, options);
@@ -99,7 +135,7 @@ class MainTable extends React.Component {
       <div className={styles.container}>
         {this.state.filteredData.slice(0, this.props.filter.limit).map((thesis) => (
           <Card
-            key={thesis.title}
+            key={Math.random()}
             thesis={thesis}
           />
         ))};

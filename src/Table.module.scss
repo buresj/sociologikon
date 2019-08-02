@@ -8,6 +8,7 @@ body {
 }
 
 .container {
+  margin-top: 80px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -18,12 +19,11 @@ body {
     display: flex;
     background-color: white;
     border-radius: 1px;
-    box-shadow: 1px 1px 1px 1px #ccc;
+    box-shadow: 1px 1px 1px 1px lightgrey;
     width: 300px;
     flex-wrap: wrap;
     height: 150px;
     align-items: baseline;
-
     flex-basis: auto;
     margin: 20px;
     transition: background-color 0.5s ease-out;
@@ -46,6 +46,7 @@ body {
       align-self: flex-end;
       display: flex;
       align-items: baseline;
+      opacity: 0.7;
 
       span {
         display: flex;
@@ -59,7 +60,6 @@ body {
       .keywords {
         border-radius: 25px;
         background-color: blue;
-        opacity: 0.5;
         cursor: pointer;
 
         &:hover {
@@ -70,13 +70,11 @@ body {
       .department {
         border-radius: 25px;
         background-color: red;
-        opacity: 0.6;
       }
 
       .year {
         border-radius: 18px;
         background-color: green;
-        opacity: 0.5;
       }
     }
   }

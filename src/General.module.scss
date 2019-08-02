@@ -1,9 +1,6 @@
-// @import url(https:;//fonts.googleapis.com/css?family=Dosis&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Nunito:400|Raleway:300&display=swap);
-
-$titleFont: "Raleway";
-
-.title {
-  font-size: 28px;
-  font-family: $titleFont;
+hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 80%;
+  background-color: black;
 }

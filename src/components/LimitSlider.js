@@ -22,7 +22,7 @@ const RangeSlider = (props) => {
   return (
     <div className={classes.root}>
       <Typography id="range-slider" gutterBottom>
-        Zobrazených prací: {props.limit}
+        Nejvýše prací: {props.limit}
       </Typography>
       <Slider
         value={value}

@@ -17,22 +17,18 @@ const Settings = props => {
                 limit={props.limit}
                 changeLimit={props.changeLimit}
             />
-            <div>
-                <MultipleSelect
-                    className={styles.department}
-                    selectData={props.department}
-                    changeFunction={props.changeSchool}
-                    menu={['FSS', 'FSV']}
-                />
-            </div>
-            <div>
-                <MultipleSelect
-                    className={styles.work}
-                    selectData={props.typeOfWork}
-                    changeFunction={props.changeType}
-                    menu={['Bc', 'Mgr', 'PhD']}
-                />
-            </div>
+            <MultipleSelect
+                className={styles.department}
+                selectData={props.department}
+                changeFunction={props.changeSchool}
+                menu={['FSS', 'FSV']}
+            />
+            <MultipleSelect
+                className={styles.work}
+                selectData={props.typeOfWork}
+                changeFunction={props.changeType}
+                menu={['Bc', 'Mgr', 'PhD']}
+            />
         </div>
     )
 }
