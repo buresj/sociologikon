@@ -1,16 +1,18 @@
 .search {
   input {
     font-size: 16px;
-    width: 200px;
+    width: 220px;
     margin-left: 27px;
     box-shadow: none;
-    border-width: 0px;
-    border: none;
     background-color: inherit;
     color: black;
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: lightgrey;
 
     &:focus {
       outline: none;
+      border-color: darkgrey;
     }
   }
 }

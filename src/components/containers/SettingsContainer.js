@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import Settings from '../Settings';
+import { checkInput } from '../../actions/search';
 import { changeYearRange, changeSchool, changeType, changeLimit } from '../../actions/settings';
 
 const mapStateToProps = (state, props) => {
@@ -24,6 +25,9 @@ const mapDispatchToProps = dispatch => {
         },
         changeType(typeOfWork) {
             dispatch(changeType(typeOfWork));
+        },
+        checkInput(state) {
+            dispatch(checkInput(state));
         }
     };
 };
