@@ -44,7 +44,7 @@ export default class Card extends React.Component {
 
         let all = [];
 
-        let thesis = [{ year: this.props.thesis.year }, { department: this.props.thesis.department }]
+        let thesis = [{ year: this.props.thesis.year }, { department: this.props.thesis.department }, { type: this.props.thesis.type }]
         thesis = thesis.map((tag, key) => {
             for (const type in tag) {
                 return <div key={key} className={styles[type]}><span>{Object.values(tag)}</span></div>
