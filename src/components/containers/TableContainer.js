@@ -8,9 +8,9 @@ const mapStateToProps = state => {
       yearRange: state.settings.yearRange,
       department: state.settings.department,
       word: state.search.word,
-      type: state.settings.typeOfWork,
-      limit: state.settings.limit
-    }
+      type: state.settings.typeOfWork
+    },
+    limit: state.settings.limit
   }
 };
 
