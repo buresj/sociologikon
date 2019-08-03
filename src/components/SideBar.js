@@ -10,11 +10,9 @@ const SideBar = () => {
         <div className={styles.container}>
             <div className={styles.settings}>
                 <SearchBarContainer />
-                <hr />
                 <SettingsContainer />
                 <hr />
                 <StatisticsContainer />
-                <hr />
                 <FooterContainer version={'v0.4'} />
             </div>
         </div>

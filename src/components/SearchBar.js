@@ -10,10 +10,14 @@ const SearchBar = (props) => {
       const args = arguments
       clearTimeout(inDebounce)
       inDebounce = setTimeout(() => func.apply(context, args), delay)
+      props.checkInput(true)
     }
   }
 
-  const delayedSearch = debounce(input => props.search(input), 400);
+  const delayedSearch = debounce(input => {
+    setTimeout(() => props.checkInput(false), 400)
+    props.search(input)
+  }, 500);
 
   const handleChange = e => delayedSearch(e.target.value);
 

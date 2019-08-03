@@ -19,7 +19,6 @@ class MainTable extends React.Component {
       filteredData: this.filterYears(data)
     };
   }
-
   componentDidUpdate(prevProps, prevState) {
 
     if (this.props.filter.yearRange !== prevProps.filter.yearRange) {
@@ -58,15 +57,6 @@ class MainTable extends React.Component {
     }
     return years;
   }
-
-
-  // getFilter() {
-  //   const filter = {
-  //     years: this.getYears(this.props.filter.yearRange),
-  //     type: this.props.type,
-  //     department: this.props.department
-  //   }
-  // }
 
   filterYears(data) {
     const filterYears = {

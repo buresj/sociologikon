@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import SearchBar from '../SearchBar';
-import { search } from '../../actions/search';
+import { search, checkInput } from '../../actions/search';
 
 const mapStateToProps = (state, props) => {
   return {
@@ -13,6 +13,9 @@ const mapDispatchToProps = dispatch => {
   return {
     search(word) {
       dispatch(search(word));
+    },
+    checkInput(state) {
+      dispatch(checkInput(state));
     }
   };
 };
