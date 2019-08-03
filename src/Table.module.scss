@@ -43,6 +43,7 @@ body {
     }
 
     .labels {
+      user-select: none;
       align-self: flex-end;
       display: flex;
       align-items: baseline;
@@ -51,7 +52,7 @@ body {
       span {
         display: flex;
         opacity: 1;
-        color: white;
+        color: #fdfffc;
         font-size: 10px;
         text-align: center;
         padding: 7px;
@@ -69,12 +70,17 @@ body {
 
       .department {
         border-radius: 25px;
-        background-color: #136f63;
+        background-color: #2ec4b6;
+      }
+
+      .type {
+        border-radius: 25px;
+        background-color: #ff9f1c;
       }
 
       .year {
         border-radius: 18px;
-        background-color: #f34213;
+        background-color: #e71d36;
       }
     }
   }
