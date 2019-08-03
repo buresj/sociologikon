@@ -17,7 +17,7 @@ class MainTable extends React.Component {
     return {
       rawData: data,
       filteredData: this.filterYears(data)
-    }
+    };
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -59,6 +59,15 @@ class MainTable extends React.Component {
     return years;
   }
 
+
+  // getFilter() {
+  //   const filter = {
+  //     years: this.getYears(this.props.filter.yearRange),
+  //     type: this.props.type,
+  //     department: this.props.department
+  //   }
+  // }
+
   filterYears(data) {
     const filterYears = {
       year: this.getYears(this.props.filter.yearRange)
@@ -71,7 +80,7 @@ class MainTable extends React.Component {
         }
       }
       return false;
-    })
+    });
     return data;
   }
 
@@ -103,7 +112,7 @@ class MainTable extends React.Component {
           return true;
       }
       return false;
-    })
+    });
     return data;
   }
 
@@ -120,20 +129,20 @@ class MainTable extends React.Component {
       this.setState({
         ...this.state,
         filteredData: fuse.search(this.props.filter.word)
-      })
+      });
 
     } else {
       this.setState({
         ...this.state,
         filteredData: filteredData
-      })
+      });
     }
   };
 
   render() {
     return (
       <div className={styles.container}>
-        {this.state.filteredData.slice(0, this.props.filter.limit).map((thesis) => (
+        {this.state.filteredData.slice(0, this.props.limit).map((thesis) => (
           <Card
             key={Math.random()}
             thesis={thesis}
