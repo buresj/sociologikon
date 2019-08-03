@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sociologikon/static/css/main.1d0eb48d.chunk.css",
+    "main.css": "/sociologikon/static/css/main.8fed610e.chunk.css",
     "main.js": "/sociologikon/static/js/main.a26a0347.chunk.js",
     "main.js.map": "/sociologikon/static/js/main.a26a0347.chunk.js.map",
     "runtime~main.js": "/sociologikon/static/js/runtime~main.f9e693b4.js",
@@ -9,10 +9,10 @@
     "static/js/2.5ddf9464.chunk.js": "/sociologikon/static/js/2.5ddf9464.chunk.js",
     "static/js/2.5ddf9464.chunk.js.map": "/sociologikon/static/js/2.5ddf9464.chunk.js.map",
     "index.html": "/sociologikon/index.html",
-    "precache-manifest.bf5ca9a407216fbae4c006bfa3fc2481.js": "/sociologikon/precache-manifest.bf5ca9a407216fbae4c006bfa3fc2481.js",
+    "precache-manifest.dd765ad161fbb10248204e90ceeebfd8.js": "/sociologikon/precache-manifest.dd765ad161fbb10248204e90ceeebfd8.js",
     "service-worker.js": "/sociologikon/service-worker.js",
     "static/css/2.cb822ba0.chunk.css.map": "/sociologikon/static/css/2.cb822ba0.chunk.css.map",
-    "static/css/main.1d0eb48d.chunk.css.map": "/sociologikon/static/css/main.1d0eb48d.chunk.css.map",
+    "static/css/main.8fed610e.chunk.css.map": "/sociologikon/static/css/main.8fed610e.chunk.css.map",
     "static/media/octocat.png": "/sociologikon/static/media/octocat.ae8fc009.png",
     "static/media/index.css": "/sociologikon/static/media/roboto-latin-900italic.ebf6d164.woff2"
   }
