@@ -8,3 +8,14 @@
     margin-top: 150px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+
+    .settings {
+      color: black;
+      margin-top: 80px;
+    }
+  }
+}
