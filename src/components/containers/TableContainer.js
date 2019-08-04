@@ -1,6 +1,8 @@
 import { connect } from 'react-redux';
 import MainTable from '../MainTable';
-import { count } from '../../actions/statistics'
+import { changeLimit } from '../../actions/settings';
+import { count } from '../../actions/statistics';
+import { checkInput } from '../../actions/search';
 
 const mapStateToProps = state => {
   return {
@@ -16,8 +18,14 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
+    changeLimit(limit) {
+      dispatch(changeLimit(limit))
+    },
     count(total) {
       dispatch(count(total));
+    },
+    checkInput(state) {
+      dispatch(checkInput(state));
     }
   }
 };
