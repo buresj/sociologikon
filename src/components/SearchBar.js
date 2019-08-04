@@ -3,6 +3,10 @@ import styles from '../SearchBar.module.scss';
 
 const SearchBar = (props) => {
 
+  let debounceTime;
+
+  window.innerWidth < 500 ? debounceTime = 2000 : debounceTime = 400;
+
   const debounce = (func, delay) => {
     let inDebounce
     return function () {
@@ -17,9 +21,11 @@ const SearchBar = (props) => {
   const delayedSearch = debounce(input => {
     setTimeout(() => props.checkInput(false), 400)
     props.search(input)
-  }, 500);
+  }, debounceTime);
 
   const handleChange = e => delayedSearch(e.target.value);
+
+  console.log(debounceTime)
 
   return (
     <div className={styles.search}>

@@ -10,6 +10,7 @@ class MainTable extends React.Component {
     super(props)
     this.state = this.getInitialState();
     this.props.count(this.state.filteredData.length);
+    this.handleScroll = this.handleScroll.bind(this);
   }
 
   getInitialState() {
@@ -115,19 +116,59 @@ class MainTable extends React.Component {
 
     if (this.props.filter.word) {
       let fuse = new Fuse(filteredData, options);
-
+      this.props.changeLimit(10);
       this.setState({
         ...this.state,
         filteredData: fuse.search(this.props.filter.word)
       });
 
     } else {
+      this.props.changeLimit(10);
       this.setState({
         ...this.state,
         filteredData: filteredData
       });
     }
   };
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll, true);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  };
+
+
+  debounce = (func, delay) => {
+    let inDebounce
+    return function () {
+      const context = this
+      const args = arguments
+      clearTimeout(inDebounce)
+      this.checkSpinner()
+      inDebounce = setTimeout(() => func.apply(context, args), delay)
+    }
+  }
+
+  handleScroll = this.debounce(() => {
+
+    if (this.checkBottom()) {
+      this.props.changeLimit(this.props.limit + 5);
+    }
+  }, 1000);
+
+  checkBottom = () => {
+    return window.innerHeight + window.pageYOffset + 1 >= document.body.offsetHeight
+  }
+
+  checkSpinner = () => {
+    if (this.checkBottom()) {
+      this.props.checkInput(true);
+    } else {
+      setTimeout(() => this.props.checkInput(false), 800);
+    }
+  }
 
   render() {
     return (
