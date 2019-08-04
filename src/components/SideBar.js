@@ -13,7 +13,7 @@ const SideBar = () => {
                 <SettingsContainer />
                 <hr />
                 <StatisticsContainer />
-                <FooterContainer version={'v0.4'} />
+                <FooterContainer version={'v0.4.2'} />
             </div>
         </div>
     )

@@ -178,7 +178,7 @@ class MainTable extends React.Component {
             key={Math.random()}
             thesis={thesis}
           />
-        ))};
+        ))}
       </div>
     )
   }
