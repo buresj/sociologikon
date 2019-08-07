@@ -19,41 +19,43 @@ export default class Card extends React.Component {
     }
 
     getKeywords() {
-        let keywords = [];
-        if (this.props.thesis.keywords) {
-            const length = this.props.thesis.keywords.length
+        let { keywords } = this.props.thesis;
+        keywords = keywords.map(keyword => keyword ? keyword.keyword : null);
+        let selectedKeywords = [];
+
+        if (keywords) {
+            const length = keywords.length
             if (length >= 3) {
                 for (let i = 0; i < 3; i++) {
-                    if (this.props.thesis.keywords[i] !== 'Klíčová slova' && this.props.thesis.keywords[i] !== 'Kľúčové slová' && this.props.thesis.keywords[i] !== ' ' && this.props.thesis.keywords[i] !== '') {
-                        keywords.push(this.props.thesis.keywords[i])
+                    if (keywords[i] !== 'Klíčová slova' && keywords[i] !== 'Kľúčové slová' && keywords[i] !== ' ' && keywords[i] !== '') {
+                        selectedKeywords.push(keywords[i])
                     }
                 }
-            } else if (this.props.thesis.keywords[0] !== '') {
-                for (const keyword of this.props.thesis.keywords) {
-                    keywords.push(keyword)
+            } else if (keywords[0] !== '') {
+                for (const keyword of keywords) {
+                    selectedKeywords.push(keyword)
                 }
             }
         } else {
             return { message: 'no keywords' }
         }
-
-        return { keywords: keywords }
+        return { keywords: selectedKeywords }
     }
 
     getTagComponents() {
-
         let all = [];
-
-        let thesis = [{ year: this.props.thesis.year }, { department: this.props.thesis.department }, { type: this.props.thesis.type }]
+        let thesis = [{ year: this.props.thesis.year }, { department: this.props.thesis.department }, { type: this.props.thesis.type }, { score: this.props.thesis.score }]
         thesis = thesis.map((tag, key) => {
-            for (const type in tag) {
-                return <div key={key} className={styles[type]}><span>{Object.values(tag)}</span></div>
+            if (tag) {
+                for (const type in tag) {
+                    return <div key={key} className={styles[type]}><span>{Object.values(tag)}</span></div>
+                }
             }
         });
 
         let keywords = [...this.state.keywords];
         keywords = keywords.map((tag, key) => {
-            if (tag.length < 30) {
+            if (tag !== undefined && tag.length < 30) {
                 return <div key={key} className={styles.keywords}><span>{tag}</span></div>
             }
         });
