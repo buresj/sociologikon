@@ -3,6 +3,10 @@ import styles from '../SearchBar.module.scss';
 
 const SearchBar = (props) => {
 
+  let placeholder;
+
+  !props.word ? placeholder = `Hledej` : placeholder = props.word;
+
   let debounceTime;
 
   window.innerWidth < 500 ? debounceTime = 2000 : debounceTime = 400;
@@ -31,7 +35,7 @@ const SearchBar = (props) => {
     <div className={styles.search}>
       <input
         onChange={handleChange}
-        placeholder={`Hledej`}
+        placeholder={placeholder}
       />
     </div >
   );

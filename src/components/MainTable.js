@@ -3,7 +3,7 @@ import dataSet from '../assets/thesis'
 import Fuse from 'fuse.js';
 import options from '../utils/options';
 import styles from '../Table.module.scss';
-import Card from './Card'
+import CardContainer from './containers/CardContainer';
 
 class MainTable extends React.Component {
   constructor(props) {
@@ -174,7 +174,7 @@ class MainTable extends React.Component {
     return (
       <div className={styles.container}>
         {this.state.filteredData.slice(0, this.props.limit).map((thesis) => (
-          <Card
+          <CardContainer
             key={Math.random()}
             thesis={thesis}
           />
