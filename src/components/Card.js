@@ -55,8 +55,8 @@ export default class Card extends React.Component {
 
         let keywords = [...this.state.keywords];
         keywords = keywords.map((tag, key) => {
-            if (tag !== undefined && tag.length < 30) {
-                return <div key={key} className={styles.keywords}><span>{tag}</span></div>
+            if (tag && tag.length < 30) {
+                return <div key={key} onClick={() => this.props.search(tag)} className={styles.keywords}><span>{tag}</span></div>
             }
         });
 
