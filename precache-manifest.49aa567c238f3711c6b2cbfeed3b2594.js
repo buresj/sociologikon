@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6b22aae7191f7acf1d1b35837671a989",
+    "revision": "974320bc289eb4a281467620118ba781",
     "url": "/sociologikon/index.html"
   },
   {
-    "revision": "acecd608fc4758c109ab",
+    "revision": "89c916079f9077ce0b7d",
     "url": "/sociologikon/static/css/2.cb822ba0.chunk.css"
   },
   {
-    "revision": "1b649be797b463d1bf05",
-    "url": "/sociologikon/static/css/main.ba8e3852.chunk.css"
+    "revision": "ae47e54aa7d4e44c1c77",
+    "url": "/sociologikon/static/css/main.cf3a8983.chunk.css"
   },
   {
-    "revision": "acecd608fc4758c109ab",
-    "url": "/sociologikon/static/js/2.dba5a6c9.chunk.js"
+    "revision": "89c916079f9077ce0b7d",
+    "url": "/sociologikon/static/js/2.8144c417.chunk.js"
   },
   {
-    "revision": "1b649be797b463d1bf05",
-    "url": "/sociologikon/static/js/main.16921d59.chunk.js"
+    "revision": "ae47e54aa7d4e44c1c77",
+    "url": "/sociologikon/static/js/main.16f20803.chunk.js"
   },
   {
     "revision": "d593ed5f8e2dae0a358a",
